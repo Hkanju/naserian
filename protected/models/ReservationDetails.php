@@ -38,6 +38,7 @@ class ReservationDetails extends CActiveRecord
 			array('room_tyepe, phone, other_info', 'length', 'max'=>45),
 			array('name, email', 'length', 'max'=>100),
 			array('check_in, check_out', 'safe'),
+			array('email' ,'email' ),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id, check_in, check_out, room_tyepe, adults, children, name, email, phone, other_info', 'safe', 'on'=>'search'),
